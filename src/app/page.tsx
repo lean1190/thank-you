@@ -58,7 +58,7 @@ export default function Home() {
     }, 70);
 
     return (
-        <main className="w-full p-4 text-left lg:w-[800px]">
+        <main className="w-full p-4 text-left lg:w-[1000px]">
             <h1 className={`${styles.hi} mb-10 w-80 px-4`}>Hi there!</h1>
             <h2 className={`${styles.word} h-12 text-neutral-950`} ref={wordRef}></h2>
         </main>
