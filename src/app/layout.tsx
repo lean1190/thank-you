@@ -1,6 +1,7 @@
 import './globals.css';
 
 import type { Metadata } from 'next';
+import { Roboto } from 'next/font/google';
 
 export const metadata: Metadata = {
     title: 'Thank you for trusting me!',
@@ -10,6 +11,13 @@ export const metadata: Metadata = {
     }
 };
 
+const font = Roboto({
+    weight: ['100', '300', '400', '500', '700', '900'],
+    style: ['normal'],
+    subsets: ['latin'],
+    display: 'swap'
+});
+
 export default function RootLayout({
     children
 }: Readonly<{
@@ -17,7 +25,7 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="en">
-            <body>{children}</body>
+            <body className={font.className}>{children}</body>
         </html>
     );
 }

@@ -1,9 +1,17 @@
 'use client';
 
 import { useLottie } from 'lottie-react';
+import { Dancing_Script } from 'next/font/google';
 
 import animationData from '../../../public/confetti.json';
 import styles from './styles.module.css';
+
+const font = Dancing_Script({
+    weight: ['400', '500', '600', '700'],
+    style: ['normal'],
+    subsets: ['latin'],
+    display: 'swap'
+});
 
 interface Props {
     hi?: string;
@@ -24,7 +32,7 @@ export default function Card({ hi = 'Hey there!', backgroundClasses = 'bg-[#fae1
             <div className={`${styles.floating} z-10`} onClick={onFloatingClick}>
                 <div className={styles.envelope}>
                     <div className={styles.card}>
-                        <div className={styles.text}>
+                        <div className={`${styles.text} ${font.className}`}>
                             <h1 className="text-3xl">{hi}</h1>
                             {paragraphs.map((content, index) => <p key={index}>{content}</p>)}
                             <p className="text-right">Lean</p>
