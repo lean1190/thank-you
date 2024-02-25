@@ -17,6 +17,7 @@
   "dependencies": {
     "@formkit/auto-animate": "^0.8.1",
     "@nextui-org/react": "^2.2.9",
+    "@vercel/analytics": "^1.2.2",
     "clsx": "^2.1.0",
     "framer-motion": "^11.0.5",
     "lottie-react": "^2.4.0",
