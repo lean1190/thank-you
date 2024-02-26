@@ -5,7 +5,7 @@ export default function CharlieMa() {
         hi="Hi Charlie!"
         backgroundClasses="bg-gradient-to-b from-purple-100 to-pink-300"
         paragraphs={[
-            'Thank you very much for trusting me, and allowing me to help you grow your coding skills.',
+            'Thank you very much for trusting me to help you grow your coding skills.',
             'Let\'s get started!'
         ]}
     />;
