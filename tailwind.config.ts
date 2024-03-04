@@ -22,10 +22,22 @@ const config: Config = {
                     '18%': { opacity: '1', transform: 'translateY(0px)' },
                     '20%': { opacity: '0', transform: 'translateY(50px)' },
                     '100%': { opacity: '0', transform: 'translateY(50px)' }
+                },
+                up: {
+                    '0%': { transform: 'translateY(0)' },
+                    '50%': { transform: 'translateY(-30px)' },
+                    '100%': { transform: 'translateY(0)' }
+                },
+                scale: {
+                    '0%': { transform: 'scaleX(1)' },
+                    '50%': { transform: 'scaleX(.85)' },
+                    '100%': { transform: 'scaleX(1)' }
                 }
             },
             animation: {
-                rotate: 'rotate 10s linear infinite'
+                rotate: 'rotate 10s linear infinite',
+                up: 'up 3s linear infinite',
+                scale: 'scale 3s linear infinite'
             }
         }
     },
